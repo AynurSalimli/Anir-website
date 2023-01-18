@@ -1,0 +1,359 @@
+@import 'reset';
+@import 'mixins';
+
+.container{
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+.header{
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__menu{
+        ul{
+         display: flex;
+         gap: 20px;
+         align-items: center;
+         @include tablet{
+            display: none;
+         }
+         @include mobile{
+            display: none;
+         }
+
+         a{
+            display: flex;
+            color: #CB9C57;
+            gap: 20px;
+            font-family: 'Unna', serif;
+         }
+    }
+}
+}
+
+.info{
+    height: 600px;
+    background-image: url('../assets/background-1.avif');
+    @include tablet{
+        height: 500px;
+    }
+    @include mobile{
+        height: 400px;
+    }
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 250px;
+        @include tablet{
+            padding-top: 150px;
+        }
+        @include mobile{
+            padding-top: 100px;
+        }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+        font-family: 'Unna';
+        @include tablet{
+            margin: auto;
+        }
+        &--title{
+            font-size: 56px;
+            width: 450px;
+            @include mobile{
+                font-size: 36px;
+                width: 300px;
+            }
+        }
+        &--desc{
+            font-size: 24px;
+
+        }
+        &--button{
+            width: 200px;
+            height: 50px;
+            background-color: #CB9C57;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Unna';
+            @include mobile{
+                width: 150px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.about{
+    padding-top: 100px;
+    @include mobile{
+        padding-top: 20px;
+    }
+    &_wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        @include tablet{
+            flex-direction: column-reverse;
+            
+        }
+    }
+    &__image{
+        img{
+        width: 392px;
+        height: 500px;
+        @include tablet{
+            width: 600px;
+            display: flex;
+            margin: auto;
+        }
+        @include mobile{
+            width: 200px;
+            height: 350px;
+        }
+    }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        font-family: 'Unna';
+        @include tablet{
+            margin: auto;
+        }
+        &--title{
+            font-size: 40px;
+            @include mobile{
+                font-size: 25px;
+            }
+        }
+
+        &--button{
+        background-color: #CB9C57;
+        width: 150px;
+        height: 50px;
+        border: none;
+        color: #fff;
+    }
+    &--image{
+        width: 600px;
+        height: 280px;
+        @include mobile{
+            width: 300px;
+            height: 200px;
+            margin: auto;
+        }
+    }
+}
+
+    
+    
+}
+
+.proud{
+    padding-top: 50px;
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__text{
+        font-family: 'Unna';
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        &--title{
+            font-size: 40px;
+        }
+        &--subtitle{
+            width: 500px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include tablet{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &--img1{
+            width: 392px;
+            height: 304px;
+        }
+        &--img2{
+            width: 392px;
+            height: 432px;
+        }
+        &--img3{
+            width: 392px;
+            height: 304px;
+        }
+        &--img4{
+            width: 392px;
+            height: 368px;
+        }
+        &--img5{
+            width: 392px;
+            height: 304px;
+        }
+        &--img6{
+            width: 392px;
+            height: 368px;
+        }
+    }
+}
+
+.design{
+    margin-top: 30px;
+    background-size: cover;
+    height: 600px;
+    background-position: fixed;
+    background-image: url('../assets/background-2.webp');
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__text{
+        color: #fff;
+        display: flex;
+        height: 600px;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Unna';
+        &--first{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &--second{
+            width: 400px;
+        }
+    }
+}
+
+.office{
+    padding-top: 30px;
+
+    _wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: 'Unna';
+        h3{
+            font-size: 30px;
+        }
+    }
+
+    &__image{
+        padding-top: 40px;
+        @include tablet{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        &--first{
+            width: 470px;
+            height: 360px;
+            @include tablet{
+                width: 400px;
+            }
+            @include mobile{
+                width: 300px;
+            }
+        }
+        &--second{
+            width: 700px;
+            height: 360px;
+            @include tablet{
+                width: 500px;
+            }
+            @include mobile{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+.footer{
+    padding: 40px 0;
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        @include tablet{
+            flex-direction: column;
+        }
+    }
+    &__text--first{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 70px;
+        &__title{
+            font-size: 40px;
+            font-family: 'Unna';
+        }
+        &__contact{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &--title{
+                font-size: 16px;
+                font-family: 'Unna';
+            }
+        }
+        &__social{
+            font-size: 25px;
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    &__text--second{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        label{
+            color: #CB9C57;
+        }
+        input{
+            height: 40px;
+            width: 400px;
+        }
+        textarea{
+            @include tablet{
+                width: 300px;
+            }
+        }
+        button{
+            background-color: #CB9C57;
+            border: none;
+            width: 150px;
+            height: 45px;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}

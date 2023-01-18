@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.header {
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header__menu ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .header__menu ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__menu ul {
+    display: none;
+  }
+}
+.header__menu ul a {
+  display: flex;
+  color: #CB9C57;
+  gap: 20px;
+  font-family: "Unna", serif;
+}
+
+.info {
+  height: 600px;
+  background-image: url("../assets/background-1.avif");
+}
+@media only screen and (max-width: 991px) {
+  .info {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info {
+    height: 400px;
+  }
+}
+.info_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 250px;
+}
+@media only screen and (max-width: 991px) {
+  .info_wrapper {
+    padding-top: 150px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info_wrapper {
+    padding-top: 100px;
+  }
+}
+.info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-family: "Unna";
+}
+@media only screen and (max-width: 991px) {
+  .info__text {
+    margin: auto;
+  }
+}
+.info__text--title {
+  font-size: 56px;
+  width: 450px;
+}
+@media only screen and (max-width: 767px) {
+  .info__text--title {
+    font-size: 36px;
+    width: 300px;
+  }
+}
+.info__text--desc {
+  font-size: 24px;
+}
+.info__text--button {
+  width: 200px;
+  height: 50px;
+  background-color: #CB9C57;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Unna";
+}
+@media only screen and (max-width: 767px) {
+  .info__text--button {
+    width: 150px;
+    font-size: 16px;
+  }
+}
+
+.about {
+  padding-top: 100px;
+}
+@media only screen and (max-width: 767px) {
+  .about {
+    padding-top: 20px;
+  }
+}
+.about_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .about_wrapper {
+    flex-direction: column-reverse;
+  }
+}
+.about__image img {
+  width: 392px;
+  height: 500px;
+}
+@media only screen and (max-width: 991px) {
+  .about__image img {
+    width: 600px;
+    display: flex;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about__image img {
+    width: 200px;
+    height: 350px;
+  }
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-family: "Unna";
+}
+@media only screen and (max-width: 991px) {
+  .about__text {
+    margin: auto;
+  }
+}
+.about__text--title {
+  font-size: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .about__text--title {
+    font-size: 25px;
+  }
+}
+.about__text--button {
+  background-color: #CB9C57;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: #fff;
+}
+.about__text--image {
+  width: 600px;
+  height: 280px;
+}
+@media only screen and (max-width: 767px) {
+  .about__text--image {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+  }
+}
+
+.proud {
+  padding-top: 50px;
+}
+.proud_wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.proud__text {
+  font-family: "Unna";
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.proud__text--title {
+  font-size: 40px;
+}
+.proud__text--subtitle {
+  width: 500px;
+  padding-bottom: 30px;
+}
+.proud__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 991px) {
+  .proud__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.proud__card--img1 {
+  width: 392px;
+  height: 304px;
+}
+.proud__card--img2 {
+  width: 392px;
+  height: 432px;
+}
+.proud__card--img3 {
+  width: 392px;
+  height: 304px;
+}
+.proud__card--img4 {
+  width: 392px;
+  height: 368px;
+}
+.proud__card--img5 {
+  width: 392px;
+  height: 304px;
+}
+.proud__card--img6 {
+  width: 392px;
+  height: 368px;
+}
+
+.design {
+  margin-top: 30px;
+  background-size: cover;
+  height: 600px;
+  background-position: fixed;
+  background-image: url("../assets/background-2.webp");
+}
+.design_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.design__text {
+  color: #fff;
+  display: flex;
+  height: 600px;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Unna";
+}
+.design__text--first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.design__text--second {
+  width: 400px;
+}
+
+.office {
+  padding-top: 30px;
+}
+.office _wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.office__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Unna";
+}
+.office__text h3 {
+  font-size: 30px;
+}
+.office__image {
+  padding-top: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .office__image {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.office__image--first {
+  width: 470px;
+  height: 360px;
+}
+@media only screen and (max-width: 991px) {
+  .office__image--first {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .office__image--first {
+    width: 300px;
+  }
+}
+.office__image--second {
+  width: 700px;
+  height: 360px;
+}
+@media only screen and (max-width: 991px) {
+  .office__image--second {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .office__image--second {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.footer {
+  padding: 40px 0;
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 991px) {
+  .footer_wrapper {
+    flex-direction: column;
+  }
+}
+.footer__text--first {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 70px;
+}
+.footer__text--first__title {
+  font-size: 40px;
+  font-family: "Unna";
+}
+.footer__text--first__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__text--first__contact--title {
+  font-size: 16px;
+  font-family: "Unna";
+}
+.footer__text--first__social {
+  font-size: 25px;
+  display: flex;
+  gap: 10px;
+}
+.footer__text--second {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__text--second label {
+  color: #CB9C57;
+}
+.footer__text--second input {
+  height: 40px;
+  width: 400px;
+}
+@media only screen and (max-width: 991px) {
+  .footer__text--second textarea {
+    width: 300px;
+  }
+}
+.footer__text--second button {
+  background-color: #CB9C57;
+  border: none;
+  width: 150px;
+  height: 45px;
+  color: #fff;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
